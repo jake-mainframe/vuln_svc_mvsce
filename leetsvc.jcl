@@ -197,7 +197,7 @@ RUNSVC   CSECT
 ***********************************************************************
          L     R13,540              POINTER TO TCB
          L     R13,180(R13)         POINTER TO JSCB
-         LA    R13,235(R13)         JSCBOPTS
+         LA    R13,235(R13)         JSCBOPTS-1 24 bit address written
          SVC   242
          MODESET KEY=ZERO,MODE=SUP
 ***********************************************************************
